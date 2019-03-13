@@ -1,0 +1,28 @@
+.copyright {
+	width: 1170px;
+	min-height: 45px;
+	height: auto;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	line-height: 45px;
+	&_background {
+		width: 100%;
+		min-height: 45px;
+		height: auto;
+		background-color: #333333;
+	}
+	&_text__container {
+		width: 400px;
+		height: 45px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&_text {
+		color: #777777;
+		font-family: 'Montserrat Regualar', Arial ,sans-serif;
+		font-size: 13px;
+	}
+}

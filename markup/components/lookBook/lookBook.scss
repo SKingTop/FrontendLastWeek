@@ -1,0 +1,66 @@
+.lookBook {
+	width: 2050px;
+	height: 530px;
+	margin: 0px auto;
+	margin-top: 36px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	&_item {
+		width: 663px;
+		height: 530px;
+		background-color: #f8f8f8;
+		box-sizing: border-box;
+		padding-top: 98px;
+		padding-right: 56px;
+		position: relative;
+		text-align: right;
+		clear: both;
+		&__img {
+			position: absolute;
+			left: 35px;
+			bottom: 0px;
+		}
+		&__h3 {
+			color: #575153;
+			font-family: 'Montserrat Light', Arial ,sans-serif;
+			width: 310px;
+			font-size: 48px;
+			text-transform: uppercase;
+			float: right;
+			span {
+				font-family: 'Montserrat Bold', Arial ,sans-serif;
+			}
+		}
+		&__text {
+			width: 300px;
+			font-family: 'Roboto Regular', Arial ,sans-serif;
+			font-size: 15px;
+			color: #727272;
+			letter-spacing: 0.6px;
+			float: right;
+			cursor: default;
+		}
+		&__link {
+			display: block;
+			width: 180px;
+			height: 59px;
+			position: absolute;
+			bottom: 142px;
+			right: 57px;
+			box-sizing: border-box;
+			border: 2px solid #737373;
+			line-height: 59px;
+			color: #454647;
+			text-align: center;
+			text-transform: uppercase;
+			cursor: pointer;
+			&:hover {
+				color: #ffffff;
+				border: 2px solid #00c8c8;
+				background-color: #00c8c8;
+				text-decoration: none;
+			}
+		}
+	}
+}
