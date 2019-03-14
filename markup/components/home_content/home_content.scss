@@ -14,6 +14,7 @@
 		font-size: 13px;
 		&__item {
 			text-transform: uppercase;
+			transition: 0.3s;
 			margin-right: 55px;
 			font-family: 'Montserrat Regular', Arial ,sans-serif;
 			color: #727272;
@@ -182,12 +183,24 @@
 		top: calc(70% - 20px);
 		left: calc(50% - 20px);
 		z-index: 100;
-		color: #ffffff;
+		a {
+			color: #ffffff;
+		}
 		.fa-info-circle {
 			font-size: 40px;
 			&:hover {
 				color: #00c8c8;
 			}
+		}
+	}
+	&__price {
+		padding-left: 10px;
+		position: relative;
+		span {
+			position: absolute;
+			font-size: 10px;
+			top: 0px;
+			left: 3px;
 		}
 	}
 }
@@ -207,6 +220,7 @@
 		height: 102px;
 		box-sizing: border-box;
 		border: 1px solid #fff;
+		transition: 0.3s;
 		&:hover {
 			border: 1px solid #727272;
 		}

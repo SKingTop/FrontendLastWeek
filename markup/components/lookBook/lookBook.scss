@@ -9,7 +9,6 @@
 	&_item {
 		width: 663px;
 		height: 530px;
-		background-color: #f8f8f8;
 		box-sizing: border-box;
 		padding-top: 98px;
 		padding-right: 56px;
@@ -18,8 +17,8 @@
 		clear: both;
 		&__img {
 			position: absolute;
-			left: 35px;
 			bottom: 0px;
+			z-index: -1;
 		}
 		&__h3 {
 			color: #575153;
@@ -37,9 +36,10 @@
 			font-family: 'Roboto Regular', Arial ,sans-serif;
 			font-size: 15px;
 			color: #727272;
-			letter-spacing: 0.6px;
+			letter-spacing: 0.1px;
 			float: right;
 			cursor: default;
+			margin-bottom: 30px;
 		}
 		&__link {
 			display: block;
@@ -55,6 +55,7 @@
 			text-align: center;
 			text-transform: uppercase;
 			cursor: pointer;
+			transition: 0.3s;
 			&:hover {
 				color: #ffffff;
 				border: 2px solid #00c8c8;

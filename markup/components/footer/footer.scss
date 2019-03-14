@@ -45,6 +45,7 @@
 		cursor: default;
 	}
 	&_text {
+		transition: 0.3s;
 		display: block;
 		font-size: 14px;
 		font-family: 'Montserrat Light', Arial ,sans-serif;
@@ -60,6 +61,7 @@
 		} 
 	}
 	&_link {
+		transition: 0.3s;
 		font-size: 14px;
 		font-family: 'Montserrat Light', Arial ,sans-serif;
 		color: #727272;
@@ -91,9 +93,13 @@
 		padding-top: 86px;
 		display: flex;
 		justify-content: space-around;
+		a {
+			color: #fff;
+		}
 	}
 }
 .footer_social_icons:hover {
+	transition: 0.3s;
 	cursor: pointer;
-	color: #a9a9a9;
+	color: #333333;
 }

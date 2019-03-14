@@ -35,6 +35,7 @@
 			text-decoration: none;
 			line-height: 45px;
 			color: #999;
+			transition: 0.3s;
 			&:hover {
 				text-decoration: none;
 				color: #00c8c8;
@@ -172,8 +173,14 @@
 		width: 467px;
 		height: 527px;
 	}
+	.navigationMenu_item__dropdown__lookBook {
+		height: 407px;
+		opacity: 1;
+		left: 0;
+		width: 467px;
+	}
 }
-.navigationMenu_item__dropdown {
+.navigationMenu_item__dropdown, .navigationMenu_item__dropdown__lookBook {
 	height: 0px;
 	overflow: hidden;
 	position: absolute;
@@ -184,7 +191,7 @@
 	transition: 0.5s;	
 	box-shadow: 0 10px 15px rgba(0,0,0,0.2);
 }
-.navigationMenu_item__dropdown {
+.navigationMenu_item__dropdown, .navigationMenu_item__dropdown__lookBook {
 	width: 467px;
 	height: 0px;
 }
@@ -223,6 +230,7 @@
 		}
 	}
 	&__bottomItem {
+		cursor: default;
 		width: 407px;
 		height: 200px;
 		background-color: #333333;
@@ -235,5 +243,11 @@
 		span {
 			font-family: 'Montserrat Bold', Arial ,sans-serif;
 		}
+	}
+}
+//
+.navigationMenu_item__dropdown__lookBook {
+	.header_subNav__item {
+		height: 146px;
 	}
 }

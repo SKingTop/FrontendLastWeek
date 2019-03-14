@@ -1,0 +1,169 @@
+.localStores_mainContainer {
+	width: 2050px;
+	height: 897px;
+	margin: 0px auto;
+}
+.localStores_content {
+	width: 1170px;
+	min-height: 367px;
+	height: auto;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__item {
+		width: 370px;
+		min-height: 367px;
+		height: auto;
+		box-sizing: border-box;
+		padding-top: 60px;
+		cursor: default;
+		&__h3 {
+			color: #575153;
+			font-family: 'Montserrat Regular', Arial ,sans-serif;
+			line-height: 1;
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: bolder;
+			margin: 0px;
+			margin-bottom: 30px;
+		}
+		&__h4 {
+			color: #727272;
+			font-family: 'Montserrat Regular', Arial ,sans-serif;
+			line-height: 1;
+			font-size: 13px;
+			text-transform: uppercase;
+			font-weight: bolder;
+			margin: 0px;
+			margin-bottom: 20px;
+		}
+		&__text {
+			width: 100%;
+			color: #8e8c8c;
+			font-family: 'Roboto Regular', Arial ,sans-serif;
+			font-size: 15px;
+			line-height: 1.467;
+			letter-spacing: -0.1px;
+			margin-bottom: 33px;
+		}
+		&__link {
+			transition: 0.3s;
+			display: block;
+			cursor: pointer;
+			width: 218px;
+			height: 59px;
+			box-sizing: border-box;
+			border: 2px solid #737373;
+			color: #454647;
+			text-transform: uppercase;
+			text-align: center;
+			line-height: 59px;
+			font-size: 16px;
+			font-family: 'Montserrat Regular', Arial ,sans-serif;
+			font-weight: bolder;
+			&:hover {
+				background-color: #00c8c8;
+				border: 2px solid #00c8c8;
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.localStores_mapBlock {
+	width: 100%;
+	min-height: 530px;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__mapContainer {
+		width: 1387px;
+		height: 530px;
+		background-color: black;
+	}
+	&__info {
+		width: 663px;
+		height: 530px;
+		background-color: #f8f8f8;
+		box-sizing: border-box;
+		padding: 43px;
+		cursor: default;
+		&__h3 {
+			color: #575153;
+			font-family: 'Montserrat Regular', Arial ,sans-serif;
+			line-height: 1;
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: bolder;
+			margin: 0px;
+			margin-bottom: 30px;
+		}
+		&__h4 {
+			color: #727272;
+			font-family: 'Montserrat Regular', Arial ,sans-serif;
+			line-height: 1;
+			font-size: 13px;
+			text-transform: uppercase;
+			font-weight: bolder;
+			margin: 0px;
+			margin-bottom: 20px;
+		}
+		&__text {
+			width: 100%;
+			color: #8e8c8c;
+			font-family: 'Roboto Regular', Arial ,sans-serif;
+			font-size: 15px;
+			line-height: 1.467;
+			margin-bottom: 30px;
+		}
+		&__contact {
+			margin-bottom: 60px;
+			&__item {
+				display: block;
+				color: #8e8c8c;
+				font-size: 14px;
+				font-family: 'Montserrat Light', Arial ,sans-serif;
+				line-height: 2.286;
+				margin: 0px;
+				padding-left: 25px;
+				position: relative;
+				i {
+					position: absolute;
+					top: 8px;
+					left: 0px;
+				}
+				&.localStores_link:hover {
+					text-decoration: none;
+					color: #00c8c8;
+				}
+			}
+		}
+		&__social {
+			width: 162px;
+			height: 30px;
+			display: flex;
+			justify-content: space-between;
+			&__item {
+				transition: 0.3s;
+				display: block;
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				background-color: #727272;
+				color: #fff;
+				text-align: center;
+				line-height: 30px;
+				&:hover {
+					background-color: #00c8c8;
+				}
+				i {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
