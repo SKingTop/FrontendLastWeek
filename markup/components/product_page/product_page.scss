@@ -1,0 +1,303 @@
+.product_content {
+	width: 1170px;
+	min-height: 1131px;
+	height: auto;
+	margin: 0px auto;
+	box-sizing: border-box;
+	padding-top: 63px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__slider {
+		width: 571px;
+		height: 710px;
+	}
+	&__description {
+		width: 571px;
+		height: 710px;
+	}
+	&__info {
+		width: 100%;
+		height: 320px;
+		align-self: flex-end;
+	}
+}
+//Описание возле слайдера
+.product_content__description {
+	cursor: default;
+	&__h3 {
+		color: #575153;
+		font-family: 'Montserrat Regular', Arial ,sans-serif;
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: bolder;
+	}
+	&__price {
+		font-size: 30px;
+		color: #9a9a9a;
+		font-family: 'Montserrat Light', Arial ,sans-serif;
+		margin: 0px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		&.sale {
+			.product_salePrice {
+				display: inline-block;
+			}
+		}
+		.product_salePrice {
+			display: none;
+			position: relative;
+			padding-left: 12px;
+			margin-right: 10px;
+			text-decoration: line-through;
+			span {
+				font-size: 15px;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+		}
+		.product_totalPrice {
+			position: relative;
+			padding-left: 12px;
+			span {
+				font-size: 15px;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+		}
+	}
+	&__text {
+		color: #8c8c8c;
+		font-size: 15px;
+		font-family: 'Roboto Regular', Arial ,sans-serif;
+		margin: 0px;
+		margin-bottom: 20px;
+		span {
+			font-family: 'Monserat Regular', Arial ,sans-serif;
+			text-transform: uppercase;
+			font-size: 13px;
+			color: #575153;
+			font-weight: bolder;
+		}
+		.productTags {
+			font-weight: normal;
+			text-transform: none;
+			color: #00c8c8;
+			a {
+				color: #00c8c8;
+			}
+		}
+	}
+	&__article {
+		color: #8e8c8c;
+		font-size: 15px;
+		font-family: 'Roboto Regular', Arial ,sans-serif;
+		ul {
+			padding-left: 15px;
+			margin-top: 15px;
+			li {
+				margin-bottom: 5px;
+			}
+		}
+	}
+	&__review {
+		cursor: pointer;
+		color: #8c8c8c;
+		font-family: 'Monserat Regular', Arial ,sans-serif;
+		font-size: 14px;
+		.reviews_count {
+			font-weight: bolder;
+			color: #727272;
+			font-family: 'Monserat Regular', Arial ,sans-serif;
+			font-size: 14px;
+		}
+		.add_review:hover {
+			color: #00c8c8;
+		}
+		.review_share {
+			color: #8c8c8c;
+			margin: 0px 10px;
+			&:hover {
+				color: #00c8c8;	
+			}
+		}
+	}
+}
+.product_selector {
+	width: 100%;
+	min-height: 237px;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__item {
+		width: 170px;
+		height: 59px;
+		&__text {
+			color: #575153;
+			font-size: 13px;
+			text-transform: uppercase;
+			font-family: 'Monserat Regular', Arial ,sans-serif;
+			font-weight: bolder;
+		}
+	}
+	&__toCart, &__toLookBook {
+		width: 241px;
+		height: 59px;
+		cursor: pointer;
+		margin: 0px;
+		margin-top: 59px;
+		font-size: 16px;
+		font-family: 'Monserat Regular', Arial ,sans-serif;
+		text-transform: uppercase;
+		border: 2px solid #737373;
+		background-color: #ffffff;
+		color: #454647;
+		outline: none !important;
+		transition: 0.3s;
+		letter-spacing: 2px;
+		i {
+			margin-right: 5px;
+		}
+		&:hover {
+			border: 2px solid #333333;
+			background-color: #333333;
+			color: #ffffff;
+		}
+	}
+	&__toLookBook {
+		width: 303px;
+	}
+	&__toCompare {
+		width: 241px;
+		height: 30px;
+		margin: 0px;
+		margin-top: 30px;
+		text-align: left;
+		border: none;
+		background-color: #ffffff;
+		font-size: 16px;
+		font-family: 'Monserat Regular', Arial ,sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: #454647;
+		cursor: pointer;
+		outline: none !important;
+		&:active {
+			color: #00c8c8;
+			span {
+				background-color: #00c8c8;
+			}
+		}
+		span {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			line-height: 30px;
+			text-align: center;
+			background-color: #727272;
+			color: #fff;
+			margin-right: 5px;
+			box-sizing: border-box;
+			padding-top: 1.5px;
+			padding-left: 2px;
+		}
+	}
+	.colorSelect,.sizeSelect {
+		width: 170px;
+		height: 35px;
+		border: 1px solid #e7e7e7;
+		font-size: 13px;
+		font-family: 'Monserat Light', Arial ,sans-serif;
+		color: #989898;
+		box-sizing: border-box;
+		padding-left: 8px;
+		outline: none;
+	}
+	.quantitySelect {
+		width: 70px;
+		height: 35px;
+		border: 1px solid #e7e7e7;
+		color: #989898;
+		box-sizing: border-box;
+		box-sizing: border-box;
+		padding-left: 8px;
+		outline: none;
+	}
+} 
+//Описание под слайдером
+.product_content__info {
+	&__menu {
+		width: 100%;
+		height: 50px;
+		background-color: #f8f8f8;
+		box-sizing: border-box;
+		padding-right: 260px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		line-height: 50px;
+		&__item {
+			padding: 0px 15px;
+			text-transform: uppercase;
+			color: #575153;
+			font-size: 16px;
+			font-family: 'Montserrat Regular', Arial ,sans-serif;
+			font-weight: bolder;
+			cursor: pointer;
+			&:hover {
+				color: #00c8c8;
+			}
+			&.active {
+				background-color: #333;
+				color: #fff;
+			}
+		}
+	}
+}
+.product_content__info__description, .product_content__info__sizeSpecs, 
+.product_content__info__deliceryReturns, .product_content__info__reviews {
+	&.active {
+		display: block;
+	}
+	display: none;
+	box-sizing: border-box;
+	padding: 27px 17px;
+	.product_description_h4 {
+		color: #727272;
+		font-family: 'Montserrat Regular', Arial ,sans-serif;
+		font-size: 13px;
+		text-transform: uppercase;
+		font-weight: bolder;
+	}
+	.product_description_text {
+		color: #8e8c8c;
+		font-size: 15px;
+		font-family: 'Roboto Regular', Arial ,sans-serif;
+	}
+}
+.product_content__info__video {
+	&.active {
+		display: block;
+	}
+	display: none;
+	box-sizing: border-box;
+	padding: 27px 17px;
+	.product_video_h4 {
+		color: #727272;
+		font-family: 'Montserrat Regular', Arial ,sans-serif;
+		font-size: 13px;
+		text-transform: uppercase;
+		font-weight: bolder;
+	}
+	.product_video_text {
+		color: #8e8c8c;
+		font-size: 15px;
+		font-family: 'Roboto Regular', Arial ,sans-serif;
+	}
+}
