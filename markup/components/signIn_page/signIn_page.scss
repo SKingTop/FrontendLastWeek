@@ -44,6 +44,9 @@
 		color: #989898;
 		font-family: 'Montserrat Light', Arial ,sans-serif;
 		font-size: 15px;
+		&:focus {
+			border: 1px solid #00c8c8;
+		}
 		&.error {
 			border: 1px solid #bb5465;
 			background-color: #fcf6f7;
@@ -120,6 +123,9 @@
 		color: #989898;
 		font-family: 'Montserrat Light', Arial ,sans-serif;
 		font-size: 15px;
+		&:focus {
+			border: 1px solid #00c8c8;
+		}
 		&.error {
 			border: 1px solid #bb5465;
 			background-color: #fcf6f7;

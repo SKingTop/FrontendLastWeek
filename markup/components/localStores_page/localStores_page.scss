@@ -1,6 +1,7 @@
 .localStores_mainContainer {
 	width: 2050px;
-	height: 897px;
+	min-height: 897px;
+	height: auto;
 	margin: 0px auto;
 }
 .localStores_content {
@@ -166,4 +167,50 @@
 			}
 		}
 	}
+}
+//Media 1920px
+@media (max-width: 2049px) {
+	.localStores_mainContainer {
+		width: calc(1920px - calc(100vw - 100%));
+	}
+	.localStores_mapBlock__mapContainer {
+    width: calc(1257px - calc(100vw - 100%));
+  }
+  .googleMap {
+  	width: 1257px;
+  }
+}
+//Media 1600px
+@media (max-width: 1919px) {
+	.localStores_mainContainer {
+		width: calc(1600px - calc(100vw - 100%));
+	}
+	.localStores_mapBlock__mapContainer {
+    width: calc(937px - calc(100vw - 100%));
+  }
+  .googleMap {
+  	width: 937px;
+  }
+}
+//Media 1280px
+@media (max-width: 1599px) {
+	.localStores_mainContainer {
+		width: calc(1280px - calc(100vw - 100%));
+	}
+	.localStores_mapBlock {
+		width: 1220px;
+		margin: 0px auto;
+		min-height: 530px;
+		height: auto;
+	}
+	.localStores_mapBlock__mapContainer {
+    width: 1220px;
+  }
+  .googleMap {
+  	width: 1220px;
+  }
+  .localStores_mapBlock__info {
+  	width: 100%;
+  	background-color: #fff;
+  }
 }

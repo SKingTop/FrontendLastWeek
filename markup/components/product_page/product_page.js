@@ -25,8 +25,8 @@ $(document).ready(function(){
 		$('.product_content__info__reviews').toggleClass('active');
 	});
 	$('.zoom').loupe({
-	  width: 350, // ширина лупы
-	  height: 450, // высота лупы
+	  width: 250, // ширина лупы
+	  height: 250, // высота лупы
 	  loupe: 'loupe' // установить css класс лупы - для курсора и тд
 	});
 	function closeAll() {

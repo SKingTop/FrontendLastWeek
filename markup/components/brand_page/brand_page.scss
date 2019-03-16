@@ -139,3 +139,31 @@
 		}
 	}
 }
+//Media 1920px
+@media (max-width: 2049px) {
+	.intro {
+    width: calc(1920px - calc(100vw - 100%));
+  }
+}
+//Media 1600px
+@media (max-width: 1919px) {
+	.intro {
+    width: calc(1600px - calc(100vw - 100%));
+  }
+  .intro_bgText {
+  	font-size: 350px;
+  	top: 65px;
+  }
+}
+//Media 1280px
+@media (max-width: 1599px) {
+	.intro {
+    width: calc(1280px - calc(100vw - 100%));
+  }
+  .intro_bgText {
+  	font-size: 280px;
+  	letter-spacing: 30px;
+  	top: 138px;
+  	left: 160px;
+  }
+}
