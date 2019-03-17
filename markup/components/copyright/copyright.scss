@@ -26,3 +26,48 @@
 		font-size: 13px;
 	}
 }
+//Media 1024px
+@media (max-width: 1279px) {
+	.copyright {
+		width: 976px;
+	}
+}
+//Media 768px
+@media (max-width: 1023px) {
+	.copyright {
+		width: 708px;
+	}
+}
+//Media 600px
+@media (max-width: 767px) {
+	.copyright {
+		width: 590px;
+	}
+}
+//Media 480px
+@media (max-width: 599px) {
+	.copyright {
+		width: 470px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}
+//Media 320px
+@media (max-width: 479px) {
+	.copyright {
+		width: 310px;
+		height: 100px;
+		justify-content: flex-start;
+		.copyright_text {
+			width: 100%;
+			height: 15px;
+			line-height: 2;
+		}
+		.copyright_text__container {
+			line-height: 1;
+			width: 100%;
+			height: 15px;
+			flex-wrap: wrap;
+		}
+	}
+}

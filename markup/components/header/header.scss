@@ -321,4 +321,44 @@
 		left: auto;
 		right: -50px;
 	}
+	.fa-chevron-down.right {
+		left: auto;
+		right: 0px;
+	}
+}
+//Media 1024px
+@media (max-width: 1279px) {
+	.header_bottomMenu {
+    width: calc(1024px - calc(100vw - 100%));
+  }
+	.header_topMenu {
+		width: 800px;
+	}
+  .header_navigationMenu {
+  	width: 500px;
+  }
+	.header_logo {
+		width: 220px;
+		padding-left: 30px;
+		padding-top: 20px;
+		box-sizing: border-box;
+	}
+	.header_search {
+		width: 220px;
+		padding-left: 40px;
+		padding-top: 40px;
+		box-sizing: border-box;
+	}
+}
+//Media 768px
+@media (max-width: 1023px) {
+	.header_topMenu__background {
+		display: none;
+	}
+	.header_bottomMenu__background {
+		display: none;
+	}
+	.header_bottomMenu {
+		display: none;
+	}
 }

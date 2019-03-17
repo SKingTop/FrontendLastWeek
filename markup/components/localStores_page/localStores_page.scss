@@ -85,6 +85,7 @@
 		width: 1387px;
 		height: 530px;
 		background-color: black;
+		overflow: hidden;
 	}
 	&__info {
 		width: 663px;
@@ -186,7 +187,7 @@
 		width: calc(1600px - calc(100vw - 100%));
 	}
 	.localStores_mapBlock__mapContainer {
-    width: calc(937px - calc(100vw - 100%));
+    width: 937px;
   }
   .googleMap {
   	width: 937px;
@@ -213,4 +214,155 @@
   	width: 100%;
   	background-color: #fff;
   }
+}
+//Media 1024px
+@media (max-width: 1279px) {
+	.localStores_mainContainer {
+		width: calc(1024px - calc(100vw - 100%));
+	}
+	.localStores_mapBlock {
+		width: 976px;
+		margin: 0px auto;
+		min-height: 530px;
+		height: auto;
+	}
+	.localStores_mapBlock__mapContainer {
+    width: 976px;
+  }
+  .googleMap {
+  	width: 976px;
+  }
+  .localStores_mapBlock__info {
+  	width: 100%;
+  	height: 430px;
+  	background-color: #fff;
+  }
+	.localStores_content {
+		width: 976px;
+		min-height: 400px;
+		position: relative;
+		&__item {
+			width: 300px;
+			min-height: 367px;
+			&:nth-child(2) {
+				width: 330px;
+			}
+		}
+	}
+}
+//Media 768px
+@media (max-width: 1023px) {
+	.localStores_mainContainer {
+		width: calc(768px - calc(100vw - 100%));
+	}
+	.localStores_mapBlock {
+		width: 738px;
+		margin: 0px auto;
+		min-height: 530px;
+		height: auto;
+	}
+	.localStores_mapBlock__mapContainer {
+    width: 738px;
+  }
+  .googleMap {
+  	width: 738px;
+  }
+  .localStores_mapBlock__info {
+  	width: 100%;
+  	height: 430px;
+  	background-color: #fff;
+  }
+	.localStores_content {
+		width: 738px;
+		min-height: 300px;
+		position: relative;
+		justify-content: space-around;
+		&__item {
+			width: 80%;
+			min-height: 300px;
+			padding-top: 20px;
+			&:nth-child(2) {
+				width: 80%;
+			}
+		}
+	}
+}
+//Media 600px
+@media (max-width: 767px) {
+	.localStores_mainContainer {
+		width: calc(600px - calc(100vw - 100%));
+	}
+	.localStores_mapBlock {
+		width: 590px;
+		margin: 0px auto;
+		min-height: 530px;
+		height: auto;
+	}
+	.localStores_mapBlock__mapContainer {
+    width: 590px;
+  }
+  .googleMap {
+  	width: 590px;
+  }
+  .localStores_mapBlock__info {
+  	width: 100%;
+  	height: 500px;
+  	background-color: #fff;
+  }
+	.localStores_content {
+		width: 590px;
+		min-height: 300px;
+		position: relative;
+		justify-content: space-around;
+		&__item {
+			width: 80%;
+			min-height: 300px;
+			padding-top: 20px;
+			&:nth-child(2) {
+				width: 80%;
+			}
+		}
+	}
+}
+//Media 480px
+@media (max-width: 599px) {
+	.localStores_mainContainer {
+		width: calc(480px - calc(100vw - 100%));
+	}
+	.localStores_mapBlock {
+		width: 470px;
+	}
+	.localStores_mapBlock__mapContainer {
+    width: 470px;
+  }
+  .googleMap {
+  	width: 470px;
+  }
+	.localStores_content {
+		width: 470px;
+	}
+}
+//Media 320px
+@media (max-width: 479px) {
+	.localStores_mainContainer {
+		width: calc(320px - calc(100vw - 100%));
+	}
+	.localStores_mapBlock {
+		width: 310px;
+	}
+	.localStores_mapBlock__mapContainer {
+    width: 310px;
+  }
+  .googleMap {
+  	width: 310px;
+  }
+	.localStores_content {
+		width: 310px;
+	}
+	.localStores_mapBlock__info {
+		height: 650px;
+	}
+	.localStores_content {
+		height: 1200px;
+	}
 }

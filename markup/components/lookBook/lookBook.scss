@@ -142,3 +142,92 @@
 		}
 	}
 }
+//Media 1024px
+@media (max-width: 1279px) {
+	.lookBook {
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: calc(1024px - calc(100vw - 100%));
+		&_item, &_item:last-child {
+			width: 95%;
+			padding-top: 90px;
+			padding-right: 30px;
+			background-color: #f8f8f8;
+			box-sizing: border-box;
+			padding-left: 330px;
+			margin-bottom: 30px;
+			.lookBook_item__h3 {
+				left: 40px;
+				text-align: left;
+				font-size: 60px;
+			}
+			.lookBook_item__text {
+				right: 40px;
+				font-size: 18px;
+				width: 300px;
+			}
+			.lookBook_item__link {
+				right: 40px;
+			}
+		}
+		&_item:last-child {
+			margin: 0px;
+		}
+		.lookBook_item__img {
+			z-index: 1;
+		}
+	}
+}
+//Media 768px
+@media (max-width: 1023px) {
+	.lookBook {
+		width: calc(768px - calc(100vw - 100%));
+		&_item, &_item:last-child {
+			padding-left: 0px;
+			.lookBook_item__h3 {
+				width: 400px;
+				left: auto;
+				right: 35px;
+				text-align: right;
+			}
+		}
+	}
+}
+//Media 600px
+@media (max-width: 767px) {
+	.lookBook {
+		width: calc(600px - calc(100vw - 100%));
+		&_item, &_item:last-child {
+			.lookBook_item__h3 {
+				font-size: 55px;
+			}
+		}
+	}
+}
+//Media 480px
+@media (max-width: 599px) {
+	.lookBook {
+		width: calc(480px - calc(100vw - 100%));
+		&_item, &_item:last-child {
+			.lookBook_item__h3 {
+				font-size: 35px;
+				width: 250px;
+			}
+		}
+	}
+}
+//Media 320px
+@media (max-width: 479px) {
+	.lookBook {
+		width: calc(320px - calc(100vw - 100%));
+		&_item, &_item:last-child {
+			.lookBook_item__h3 {
+				font-size: 35px;
+				width: 250px;
+			}
+			.lookBook_item__link {
+				background-color: rgba(248,248,248,0.7);
+			}
+		}
+	}
+}

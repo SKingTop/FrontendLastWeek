@@ -197,3 +197,83 @@
 		background-color: #fff;
 	}
 }
+//Media 1024px
+@media (max-width: 1279px) {
+	.signIn_content {
+		width: 970px;
+	}
+	.registerForm{
+		&_privacyPolicy {
+			width: 100%;
+			float: none;
+			text-align: left;
+			margin-top: 10px;
+		}
+		&_checkbox {
+			top: 10px;
+		}
+	}
+}
+//Media 768px
+@media (max-width: 1023px) {
+	.signIn_content {
+		width: 708px;
+		.signInForm_submit {
+			width: 100%;
+		}
+	}
+	.signIn_content__item {
+		width: 100%;
+	}
+	.signInForm {
+		padding: 0;
+	}
+	.signIn_content__item.signInBlock {
+		border: none;
+		height: 330px;
+	}
+	.registerForm{
+		padding: 0;
+		&_privacyPolicy {
+			width: 100%;
+			float: none;
+			text-align: left;
+			margin-top: 30px;
+		}
+		&_checkbox {
+			top: 0px;
+		}
+		.registerForm_submit {
+			width: 100%;
+		}
+	}
+}
+//Media 600px
+@media (max-width: 767px) {
+	.signIn_content {
+		width: 550px;
+	}
+}
+//Media 480px
+@media (max-width: 599px) {
+	.signIn_content {
+		width: 450px;
+	}
+	.registerForm{
+		&_checkbox {
+			top: 5px;
+		}
+	}
+}
+//Media 320px
+@media (max-width: 479px) {
+	.signIn_content {
+		width: 300px;
+		margin-bottom: 50px;
+	}
+	.registerForm{
+		&_checkbox {
+			top: 5px;
+		}
+	}
+}

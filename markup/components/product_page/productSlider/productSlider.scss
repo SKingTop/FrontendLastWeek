@@ -35,3 +35,15 @@
 		border:5px solid rgba(0, 0, 0, 0);
 	}
 }
+//Media 480px
+@media (max-width: 599px) {
+	.productSlider {
+		width: 470px;
+  }
+}
+//Media 320px
+@media (max-width: 479px) {
+	.productSlider {
+		width: 310px;
+  }
+}
