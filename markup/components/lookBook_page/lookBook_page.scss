@@ -496,6 +496,21 @@
 	    background-size: cover;
 	    background-repeat: no-repeat;
 	    background-position: 80% 50%;
+	    padding: 0;
+	    .dark {
+	    	box-sizing: border-box;
+	    	padding-top: 15px;
+	    	padding-left: 15px;
+	    	width: 100%;
+	    	height: 100%;
+	    	display: block;
+	    	background-color: rgba(0,0,0,0.4);
+	    	.largeBanner_h2,
+	    	.largeBanner_h3,
+	    	.largeBanner_text {
+	    		color: #f8f8f8;
+	    	}
+	    }
 			img {
 				display: none;
 			}
@@ -503,7 +518,9 @@
 				position: absolute;
 				right: 20px;
 				bottom: 20px;
-				background-color: rgba(248,248,248,0.7);
+				color: #f8f8f8;
+				background-color: rgba(0,0,0,0.4);
+				border-color: #f8f8f8;
 			}
 		}
 		&__item.extraLarge {
@@ -515,8 +532,28 @@
 	    background-size: cover;
 	    background-repeat: no-repeat;
 	    background-position: 50% 50%;
+	    padding: 0;
+	    .dark {
+	    	box-sizing: border-box;
+	    	padding-top: 15px;
+	    	padding-left: 15px;
+	    	width: 100%;
+	    	height: 100%;
+	    	display: block;
+	    	background-color: rgba(0,0,0,0.4);
+	    	.extraLargeBanner_h2,
+	    	.extraLargeBanner_h3,
+	    	.extraLargeBanner_text {
+	    		color: #f8f8f8;
+	    	}
+	    }
 	    .extraLargeBanner_text {
 	    	width: 100%;
+	    }
+	    .extraLargeBanner_link {
+				color: #f8f8f8;
+				background-color: rgba(0,0,0,0.4);
+				border-color: #f8f8f8;
 	    }
 			.extraLargeBanner_h1 {
 				display: none;
@@ -546,28 +583,27 @@
 		&__item.large {
 			width: 300px;
 			height: 500px;
-			padding-left: 5px;
-			padding-top: 34px;
 			position: relative;
 	    background-position: 80% 50%;
 			.largeBanner_link {
 				position: absolute;
 				right: 20px;
 				bottom: 20px;
-				background-color: rgba(248,248,248,0.7);
 			}
-			.largeBanner_text {
-				width: 100%;
+			.largeBanner_text, .largeBanner_text.wider {
+				width: 90%;
+			}
+			.largeBanner_h2 {
+				font-size: 44px;
 			}
 		}
 		&__item.extraLarge {
 			position: relative;
 			width: 300px;
 			height: 690px;
-			padding-top: 34px;
 	    background-position: 50% 50%;
 	    .extraLargeBanner_text {
-	    	width: 100%;
+	    	width: 90%;
 	    }
 		}
 	}

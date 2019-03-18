@@ -41,4 +41,22 @@ $(document).ready(function(){
 		$('.product_content__info__menu__item.product_reviews').removeClass('active');
 		$('.product_content__info__reviews').removeClass('active');
 	}
+	$('.quantitySelectUp').on('click',function() {
+		var $qty = $('.quantitySelect').val();
+		$qty = Number($qty);
+		$qty += 1;
+		if ($qty >= 99) {
+			$qty = 99;
+		}
+		$('.quantitySelect').val($qty);
+	});
+	$('.quantitySelectDown').on('click',function() {
+		var $qty = $('.quantitySelect').val();
+		$qty = Number($qty);
+		$qty -= 1;
+		if ($qty <= 0) {
+			$qty = 1;
+		}
+		$('.quantitySelect').val($qty);
+	});
 });

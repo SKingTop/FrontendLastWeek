@@ -255,8 +255,12 @@
 	.intro {
     width: 100%;
     height: 338px;
+    background-image: url("%=static=%general/photo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     img {
-    	height: 100%;
+    	display: none;
     }
     &_h3 {
     	line-height: 1.5;
