@@ -59,4 +59,6 @@ $(document).ready(function(){
 		}
 		$('.quantitySelect').val($qty);
 	});
+	$('.sizeSelect').niceSelect();
+	$('.colorSelect').niceSelect();
 });

@@ -19,7 +19,7 @@
 }
 .topMenu {
 	&_currency {
-		width: 120px;
+		width: 150px;
 		height: 45px;
 		line-height: 41px;
 		color: #999;
@@ -54,6 +54,19 @@
 				margin-right: 15px;
 			}
 		}
+	}
+}
+//*******
+.topMenu_currency {
+	.nice-select {
+		float: right;
+		background-color: #333;
+		border: none;
+		line-height: 45px;
+		.list {
+			background-color: #333;
+		}
+		z-index: 10000;
 	}
 }
 //Bottom menu

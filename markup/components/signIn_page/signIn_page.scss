@@ -197,6 +197,28 @@
 		background-color: #fff;
 	}
 }
+.registerForm_checkbox { 
+	display: none; 
+	width: 80px; 
+} 
+.checkbox_label:before { 
+	content: ""; 
+	display: block; 
+	width: 22px; 
+	height: 22px; 
+	outline: 1px solid #e7e7e7; 
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+} 
+.registerForm_checkbox:checked + .checkbox_label:before { 
+	content: url('%=static=%general/check.png'); 
+	outline: 1px solid #e7e7e7; 
+	width: 22px; 
+	height: 22px; 
+	background-color: #fff; 
+	color: black; 
+}
 //Media 1024px
 @media (max-width: 1279px) {
 	.signIn_content {

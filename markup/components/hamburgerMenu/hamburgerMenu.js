@@ -12,4 +12,5 @@ $(document).ready(function(){
 	$('.hamburgerMenu__menu').on('click',function() {
 		$('.hamburgerMenu__dropdown').removeClass('open');
 	});
+	$('.hamburger_selector').niceSelect();
 });

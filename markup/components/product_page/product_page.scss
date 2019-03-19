@@ -253,6 +253,18 @@
 		padding-left: 8px;
 		outline: none;
 	}
+	.nice-select {
+		line-height: 35px;
+		.list {
+			width: 100%;
+		}
+		.option.focus, .nice-select .option.selected.focus {
+			background-color: #e7e7e7;
+		}
+		.option:hover {
+			background-color: #00c8c8;
+		}
+	}
 } 
 //Описание под слайдером
 .product_content__info {

@@ -285,7 +285,13 @@
 @media (max-width: 479px) {
 	.intro {
     &_text {
-    	padding-top: 10px;
+    	padding-top: 80px;
+    }
+    &_h3 {
+    	font-size: 20px;
+    }
+    &_h2 {
+    	margin-bottom: 20px;
     }
   }
   .intro_bgText {
